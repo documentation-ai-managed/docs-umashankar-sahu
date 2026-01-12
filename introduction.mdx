@@ -1,0 +1,100 @@
+---
+title: Introduction to Umashankar Sahu
+description: Welcome to Umashankar Sahu's documentation platform, a dedicated space for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Welcome to Umashankar Sahu's documentation platform. You get a centralized hub to organize, manage, and collaborate on all your project documentation. This space supports Markdown and MDX files, making it easy to create rich, interactive docs with components like steps, tabs, and cards. Use it to streamline workflows, track changes, and ensure your team stays aligned.
+
+The platform emphasizes simplicity and power. You can build pages quickly while accessing advanced features for larger projects. Customize with your brand color `{`#3B82F6`}` for a professional look.
+
+## Key Features
+
+Discover the core capabilities that make Umashankar Sahu ideal for project documentation.
+
+<Columns cols={3}>
+  <Card title="Centralized Organization" icon="folder" href="/docs/organization">
+    Group docs by projects, tags, and versions. Search across all content instantly.
+  </Card>
+  <Card title="Rich MDX Components" icon="code" href="/docs/components">
+    Embed interactive elements like `<Steps>`, `<Tabs>`, and `<Callout>` directly in your pages.
+  </Card>
+  <Card title="Collaboration Tools" icon="users" href="/docs/collaboration">
+    Share, review, and version-control docs with your team in real-time.
+  </Card>
+</Columns>
+
+These features help you scale from simple notes to comprehensive guides.
+
+## Quick Start
+
+Get up and running in minutes with these steps.
+
+<Steps>
+  <Step title="Create Your Space" icon="user-plus">
+    Sign up at `https://umashankar-sahu.com` and set up your first project folder.
+  </Step>
+  <Step title="Add Your First Doc" icon="file-plus">
+    Upload a Markdown file or use the editor to write your `{`README.md`}`.
+  </Step>
+  <Step title="Customize Branding" icon="palette">
+    Apply your brand color `{`#3B82F6`}` in the settings panel.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Generate a live site and share the URL with your team.
+  </Step>
+</Steps>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain consistency across your documentation.
+
+<Callout kind="info">
+  Primary brand color: `{`#3B82F6`}` (Blue-500). Use it for headers, buttons, and accents.
+</Callout>
+
+Here's how to apply it in CSS:
+
+<CodeGroup tabs="CSS,Tailwind">
+  ```css
+  :root {
+    --brand-color: #3B82F6;
+  }
+
+  .header {
+    background-color: var(--brand-color);
+    color: white;
+  }
+  ```
+  ```html
+  <div class="bg-blue-500 text-white p-4 rounded-lg">
+    Branded Header
+  </div>
+  ```
+</CodeGroup>
+
+Avoid using it for text to ensure readability. Pair with neutral grays for best results.
+
+## Quick Navigation
+
+Jump to essential sections:
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Detailed setup instructions.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure access methods.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize your space.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Latest updates.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Explore the quickstart next to build your first project doc.
+</Callout>

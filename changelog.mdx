@@ -1,0 +1,126 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Umashankar Sahu's documentation platform.
+---
+
+## Recent Releases
+
+Stay informed about new features, bug fixes, and improvements in Umashankar Sahu. You receive automatic updates, but review these notes to understand changes and migrate if needed.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added support for `<Tabs>` and `<CodeGroup>` components to enhance multi-platform documentation
+- Introduced `<Columns>` layout for feature grids and navigation cards
+- Enabled custom brand colors like `#3B82F6` in your documentation themes
+
+## Improvements
+
+- Enhanced MDX parsing to handle nested code blocks with 4 backticks automatically
+- Improved rendering speed for pages with multiple `<Update>` components
+
+## Bug Fixes
+
+- Fixed parsing errors from unescaped `{` and `}` characters in prose
+- Resolved heading hierarchy issues preventing H1 usage in body content
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated `<Callout>` component with kinds: `info`, `tip`, `success`, `alert`, `danger`
+- Added `<Steps>` for sequential tutorials and installation guides
+
+## Bug Fixes
+
+- Corrected JSX attribute syntax to enforce double quotes only
+- Fixed `<ParamField>` to accept only one location attribute (`path`, `query`, `header`, or `body`)
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched core MDX documentation engine with YAML frontmatter support
+- Added `<Card>` components for navigation and `<Image>` with required `alt` text
+
+## Breaking Changes
+
+- Removed support for H1 headings in page body; use frontmatter `title` instead
+- Mermaid diagrams now require code block syntax only—no `<Mermaid>` component
+
+</Update>
+
+## Upgrade Instructions
+
+<Callout kind="info">
+Review breaking changes before upgrading. Test your documentation locally to ensure no parsing errors.
+</Callout>
+
+Follow these steps to upgrade your Umashankar Sahu documentation:
+
+<Steps>
+  <Step title="Backup" icon="database">
+    Save your current `docs/` directory.
+  </Step>
+  <Step title="Update Package" icon="download">
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install umashankar-sahu@latest
+````
+````bash
+yarn add umashankar-sahu@latest
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Verify Syntax" icon="check-circle">
+    Run your build command and scan for parsing errors related to `{` or `<` characters.
+  </Step>
+  <Step title="Deploy" icon="rocket">
+    Push changes to your hosting platform.
+  </Step>
+</Steps>
+
+## Quick Links
+
+<Columns cols={3}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Get started with Umashankar Sahu basics.
+  </Card>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first documentation page.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+</Columns>
+
+## Upcoming Changes
+
+<Expandable title="Preview: v1.3.0 Features" default-open="false">
+
+Expect `<Video>` embeds and advanced `<Request>`/` <Response>` components for API docs. Migration code example:
+
+<CodeGroup tabs="JavaScript,Python">
+````javascript
+// New API client usage
+const client = new UmashankarClient({ apiKey: `YOUR_API_KEY` });
+const docs = await client.getDocs({ project: "my-project" });
+````
+````python
+# New Python SDK
+from umashankar import Client
+client = Client(api_key="YOUR_API_KEY")
+docs = client.get_docs(project="my-project")
+````
+</CodeGroup>
+
+</Expandable>
+
+<Callout kind="tip">
+Subscribe to updates via the dashboard at `https://dashboard.example.com/notifications` to get email alerts on new releases.
+</Callout>

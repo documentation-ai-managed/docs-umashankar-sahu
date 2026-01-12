@@ -1,0 +1,123 @@
+{
+  "name": "Umashankar Sahu",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#3B82F6"
+    },
+    "dark": {
+      "brand": "#6ca1f8"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap"
+              }
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "icon": "layers",
+            "pages": [
+              {
+                "title": "Core Concepts",
+                "path": "core-concepts",
+                "icon": "book-open"
+              },
+              {
+                "title": "Managing Docs",
+                "path": "managing-docs",
+                "icon": "file-text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "icon": "terminal",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Help Center",
+        "icon": "help-circle",
+        "pages": [
+          {
+            "title": "Help Center",
+            "path": "help-center",
+            "icon": "home"
+          },
+          {
+            "group": "FAQs",
+            "icon": "help-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Getting Started FAQ",
+                "path": "help-center/faq/getting-started",
+                "icon": "help-circle"
+              }
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-triangle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Cannot Upload File",
+                "path": "help-center/troubleshooting/cannot-upload-file",
+                "icon": "alert-triangle"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "icon": "book-open",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Create Project",
+                "path": "help-center/guides/create-project",
+                "icon": "book-open"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

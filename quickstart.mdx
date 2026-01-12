@@ -1,0 +1,123 @@
+---
+title: Getting Started with Umashankar Sahu
+description: Set up your account and create your first documentation space to begin organizing projects right away.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following ready:
+
+<Callout kind="info">
+
+- A modern web browser like Chrome, Firefox, or Safari
+- A valid email address for account verification
+- Optional: Node.js `{^18.0.0}` installed for CLI usage
+
+</Callout>
+
+## Create Your Account
+
+Follow these steps to sign up quickly.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="globe">
+    Navigate to `https://dashboard.example.com` and click **Sign Up**.
+  </Step>
+  <Step title="Fill Registration Form" icon="user-plus">
+    Enter your email, create a strong password, and agree to the terms.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link from `no-reply@example.com` and click it to activate your account.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Use a business email for team collaborations to unlock advanced features later.
+
+</Callout>
+
+## Create a New Documentation Space
+
+Once logged in, set up your first space to organize projects.
+
+<Steps>
+  <Step title="Access Spaces Dashboard" icon="layout">
+    From the sidebar, select **Documentation Spaces** > **New Space**.
+  </Step>
+  <Step title="Configure Space" icon="settings">
+    Name your space (e.g., "My Project Docs"), add a description, and choose visibility (public or private).
+  </Step>
+  <Step title="Save and Enter" icon="check-circle">
+    Click **Create Space** to enter your new documentation hub.
+  </Step>
+</Steps>
+
+## Add Your First Project Page
+
+Populate your space with content using the editor or CLI.
+
+<Tabs>
+  <Tab title="Web Editor" icon="edit-3">
+
+    1. Click **New Page** in your space.
+    2. Title it "Project Overview" and add markdown content.
+    3. Use the live preview to format headings, lists, and code blocks.
+    4. Publish to make it live.
+
+  </Tab>
+  <Tab title="CLI (Advanced)" icon="terminal">
+
+    Install the CLI first, then create pages programmatically.
+
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm install -g umashankar-sahu-cli
+    ````
+
+    ````bash
+    yarn global add umashankar-sahu-cli
+    ````
+    </CodeGroup>
+
+    ````bash
+    usahu space create --name "My Project Docs" --api-key YOUR_API_KEY
+    usahu page add --space "My Project Docs" --title "Project Overview" --content "# Hello World"
+    ````
+
+  </Tab>
+</Tabs>
+
+## Initial Configuration Tips
+
+Customize your space for better organization.
+
+<Columns cols={2}>
+  <Card title="Set Brand Color" icon="palette" href="#brand-config">
+    Update to `#3B82F6` in **Space Settings** > **Appearance**.
+  </Card>
+  <Card title="Invite Team Members" icon="users" href="#team-setup">
+    Add collaborators via email invites under **Members**.
+  </Card>
+  <Card title="Enable Version History" icon="git-branch" href="#history">
+    Toggle in **Advanced Settings** for rollback capabilities.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced: API Key Setup" default-open="false">
+
+Generate an API key from **Account** > **API Keys** for CLI or integrations. Store it securely as `YOUR_API_KEY`.
+
+```bash
+export USAHU_API_KEY="your-api-key-here"
+```
+
+</Expandable>
+
+## Next Steps
+
+<Callout kind="success">
+
+Congratulations! You've set up Umashankar Sahu. Explore [authentication](/authentication) for secure access and [concepts](/concepts) for advanced features.
+
+</Callout>
